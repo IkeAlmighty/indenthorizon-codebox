@@ -1,0 +1,15 @@
+{
+  "name": "indenthorizon-codebox",
+  "version": "0.0.1",
+  "description": "a headless process for recieving via http and running untrusted nodejs code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "ikealmighty",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "vm2": "^3.9.13"
+  }
+}
