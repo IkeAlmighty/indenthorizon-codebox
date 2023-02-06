@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.post("/run", function (req, res) {
-  const { code, apikey } = JSON.parse(req.body);
+  const { code, apikey } = req.body;
 
   // TODO: check api key
 
@@ -22,4 +22,4 @@ app.get("/", function (req, res) {
   res.redirect("https://github.com/ikealmighty/indenthorizon-codebox");
 });
 
-app.listen(3000);
+app.listen(4000, () => console.log("listening on http://localhost:4000"));
